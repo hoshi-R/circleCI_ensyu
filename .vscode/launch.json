@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-circl<circleci>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.example.circleci.controller.circl",
+      "projectName": "circleci",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-CircleciApplication<circleci>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.example.circleci.CircleciApplication",
+      "projectName": "circleci",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
