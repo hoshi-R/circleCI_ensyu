@@ -11,4 +11,4 @@ workflows:
       - maven/test:
           executor:
             name: "maven/default"
-            tag: "17.0.0"
+            tag: "3.8.0"
