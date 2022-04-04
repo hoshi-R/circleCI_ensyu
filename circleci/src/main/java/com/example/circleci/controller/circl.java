@@ -20,9 +20,9 @@ public class circl {
 			driver.get("https://www.google.com/");
       File sfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
       Date date = new Date();
-      SimpleDateFormat sdf = new SimpleDateFormat("yyyy'年'MM'月'dd'日'E'曜日'k'時'mm'分'ss'秒'");
+      SimpleDateFormat sdf = new SimpleDateFormat("yyyy'/'MM'/'dd'/'E'/'k'/'mm'/'ss'/'");
       try {
-        Files.copy(sfile.toPath(), new File("保存先" + "スクリーンキャプチャ" + sdf.format(date) + ".png").toPath());					
+        Files.copy(sfile.toPath(), new File(sdf.format(date) + ".png").toPath());
       } catch (Exception e) {
       }
       System.out.println(sfile);
